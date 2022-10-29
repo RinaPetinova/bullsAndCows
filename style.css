@@ -9,9 +9,9 @@ body {
 }
 
 .container {
-    width: 50%;
-    margin: 50px auto;
-    padding: 20px 50px; 
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px; 
     border-left: 5px dotted #f582ae;
     
 }
