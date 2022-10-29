@@ -86,7 +86,7 @@ function again() {
     mainDiv.appendChild(divAgain);
     divAgain.type = 'button';
     divAgain.value = 'Начать игру заново';
-    divAgain.setAttribute('class', "btn btn-info")
+    divAgain.setAttribute('class', "b-1");
     divAgain.addEventListener("click", reloadPage);
     // setTimeout(reloadPage, 6000);
 }
