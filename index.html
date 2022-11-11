@@ -13,54 +13,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bulls And Cows</h1>
-        <h3>Расшифруй загаданное число</h3>
-            
-                <!-- <div class="row">
+    <!-- <div class="container"> -->
+        <div class="container flex-container">
+            <div class="cont2">
+            <h1>Bulls And Cows</h1>
+            <h3>Расшифруй загаданное число</h3>
+
+                
+                <h1 class="rules">Правила игры</h1>
+                <div class="rules-collaps">
+                    <p>Компьютер задумывает четыре различные цифры из 0,1,2,...9. Игрок делает ходы, чтобы узнать эти цифры и их порядок.</p>
+
+                    <p>Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте. </p>
                     
-                        <div class="input game ">
+                    <p>В ответ компьютер показывает число отгаданных цифр, стоящих на своих местах (число быков) и число отгаданных цифр, стоящих не на своих местах (число коров).</p>
                     
-                        <input type="text" class="i-1 " placeholder="Введите число">
-                        </div>
-                        <div class="col-6 sm-3">
-                        <button class="btn b-1 " >Проверить</button>
-                        </div>
+                    <p><span class="bold">Пример </span></p>
+                    <p>Компьютер задумал 0834.</p>
                     
-                </div> -->
+                    <p>Игрок сделал ход 8134.</p>
+                    
+                    <p>Компьютер ответил: 2 быка (цифры 3 и 4) и 1 корова (цифра 8).</p>
+                </div>
+                <!-- </div> -->
+                <div class="input game ">
+                    
+                    <input type="text" class="i-1 " placeholder="Введите число">
+                    <button class=" b-1 " >Проверить</button>
+                    
+                </div>
+
+                <div class="nums">
+                    <input type="text" class="num1">
+                    <input type="text" class="num1">
+                    <input type="text" class="num1">
+                    <input type="text" class="num1">
+                </div>
+                
+                    
+                        
+                    
                 
                 
-                    
-                        <div class="input game ">
-                    
-                        <input type="text" class="i-1 " placeholder="Введите число">
-                      
-                        </div>
-                    
-                        <button class=" b-1 " >Проверить</button>
-                    
-                <!-- <div class="nums">
-                    <input type="text" class="num form-control"> 
-                    <input type="text" class="num form-control">  
-                    <input type="text" class="num form-control">  
-                    <input type="text" class="num form-control"> 
-                </div> -->
-            
-            
-          <div class="out"></div>
-    </div>
-        <!-- <div class="game">
-            <input type="text" class="i-1 mb-3">
-            <button class="b-1 btn btn-outline-info">Проверить</button>
             <div class="out"></div>
-        </div> -->
-
-        <!-- <div class="answer">
-            <input type="text" class="i-1">
-
-        </div> -->
+        </div>
+        </div>
+    <!-- </div> -->
+        
     
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="code.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ function check() {
     counter++;
     let byki=0;
     let korovi=0;
+    let korovi_=0;
     
     //Создается массив из строки, полученной в input
     guessedArr=Array.from(String(input.value), Number);
@@ -44,16 +45,17 @@ function check() {
 
         for (let k=0; k<=3; k++) {
             if (guessedArr[k]===answer[i]){
-                    korovi++;
+                    korovi_++;
             }
         }
+        korovi= korovi_-byki;
     }
    
     //вывод в div резульата операции
     divOut.innerHTML += `${input.value}   Быков: ${byki}, Коров: ${korovi} <br>`;
 
     //в случае выигрыша выводится сообщение
-    if (byki===4 && korovi === 4) {
+    if (byki===4) {
         divOut.innerHTML += `You won in ${counter} attempts! <br>`;
         //и вызывается функция, которая создает новый div с сообщением и перегружает страницу
         again();
@@ -77,13 +79,18 @@ input.addEventListener("keypress", function(event){
     
 });
 
+$('.rules-collaps').hide();
+$('.rules').click(function(){
+    $('.rules-collaps').slideToggle();
+});
+
 
 
 
 function again() {
     let divAgain = document.createElement('input');
-    let mainDiv = document.querySelector('.container');
-    mainDiv.appendChild(divAgain);
+    let mainDiv = document.querySelector('.cont2');
+    mainDiv.append(divAgain);
     divAgain.type = 'button';
     divAgain.value = 'Начать игру заново';
     divAgain.setAttribute('class', "b-1");
